@@ -57,7 +57,7 @@ limitations under the License.
             <li><a href="anon.html">Anonymous</a><br><br></li>
             <li><a href="email-password.html">Email and Password authentication</a></li>
             <li><a href="email-link.html">Email Link authentication</a><br><br></li>
-            
+
             <li><a href="customauth.html">Custom Authentication</a> and an Example <a href="exampletokengenerator/auth.html">Custom Token Generator</a><br><br></li>
 
             <li><a href="phone-visible.html">Phone number sign-in with visible ReCaptcha</a></li>
@@ -90,5 +90,24 @@ limitations under the License.
     </div>
   </main>
 </div>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBOQGFpjeZllJndDxUdFaFifG8miq9zE_U",
+    authDomain: "authentication-test-1fdf8.firebaseapp.com",
+    databaseURL: "https://authentication-test-1fdf8.firebaseio.com",
+    projectId: "authentication-test-1fdf8",
+    storageBucket: "authentication-test-1fdf8.appspot.com",
+    messagingSenderId: "271166765451",
+    appId: "1:271166765451:web:2334338e14ef8adbf1d78e",
+    measurementId: "G-XBWCP997CX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </body>
 </html>
