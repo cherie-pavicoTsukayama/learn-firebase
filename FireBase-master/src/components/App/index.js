@@ -24,8 +24,7 @@ export default function App() {
 
 
 	return firebaseInitialized !== false ? (
-		<MuiThemeProvider theme={theme}>
-			<CssBaseline />
+
 			<Router>
 				<Switch>
 					<Route exact path="/" component={HomePage} />
@@ -34,6 +33,6 @@ export default function App() {
 					<Route exact path="/dashboard" component={Dashboard} />
 				</Switch>
 			</Router>
-		</MuiThemeProvider>
+
 	) : <div id="loader"><CircularProgress /></div>
 }

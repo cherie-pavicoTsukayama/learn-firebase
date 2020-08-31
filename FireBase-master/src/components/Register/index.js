@@ -43,6 +43,8 @@ function Register(props) {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const [quote, setQuote] = useState('')
+	const [businessName, setBusinessName] = useState('')
+
 
 	return (
 		<main className={classes.main}>
@@ -69,6 +71,10 @@ function Register(props) {
 					<FormControl margin="normal" required fullWidth>
 						<InputLabel htmlFor="quote">Your Favorite Quote</InputLabel>
 						<Input name="quote" type="text" id="quote" autoComplete="off" value={quote} onChange={e => setQuote(e.target.value)}  />
+					</FormControl>
+					<FormControl margin="normal" required fullWidth>
+						<InputLabel htmlFor="quote">Business Name</InputLabel>
+						<Input name="businessName" type="text" id="quote" autoComplete="off" value={businessName} onChange={e => setBusinessName(e.target.value)} />
 					</FormControl>
 
 					<Button
