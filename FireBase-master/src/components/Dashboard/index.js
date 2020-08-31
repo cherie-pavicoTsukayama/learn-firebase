@@ -44,6 +44,7 @@ function Dashboard(props) {
 	}
 
 	const [quote, setQuote] = useState('')
+	const [newText, setNewText] = useState('');
 
 	useEffect(() => {
 		firebase.getCurrentUserQuote().then(setQuote)
